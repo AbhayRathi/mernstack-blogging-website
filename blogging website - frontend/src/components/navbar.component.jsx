@@ -7,6 +7,8 @@ const Navbar = () =>
 const [searchBoxVisibility, setSearchBoxVisibility ] = useState(false)
 
     return (
+        <>
+        
         <nav className="navbar">
 
             <Link to="/" className='flex-none w-10'>
@@ -41,6 +43,10 @@ const [searchBoxVisibility, setSearchBoxVisibility ] = useState(false)
             </div>
 
         </nav>
+
+        <Outlet />
+        
+        </>
     );
 }
 
